@@ -28,6 +28,11 @@
 .navbar-links{
     flex: 1;
 }
+.close a{
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
 .navbar-links ul{
     margin-left: 50px;
     display: inline;
@@ -144,4 +149,50 @@
 .contents p{
     text-align: right;
     margin-top: 10px;
+}
+
+
+/* MEDIA QUERIE */
+@media only screen and (max-width:700px){
+    
+    .vertical-bar{
+        display: none;
+    }
+    .banner-title{
+        margin: 10px 40px;
+    }
+    .navbar-logo a{
+        font-size: 70px;
+        margin-left: -80px;
+    }
+    .banner-title h1{
+        font-size: 40px;
+    }
+    .notifications{
+        width: 100%;
+    }
+    
+    .far {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        color: #fff;
+    }
+    .navbar-links{
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        top: 0;
+        right: 0;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+    }
+    .navbar-links ul a{
+        display: block;
+    }
+    .navbar-links .btn{
+        float: none;
+        margin-left: 25px,
+    }
 }
